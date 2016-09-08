@@ -15,8 +15,7 @@ title: Jerome Toole | Design & Development
 description: Design and Development
 
 # Name of project on Github
-url: "http://jerome-toole.github.io/design-site/"
-baseurl: "https://jerome-toole.github.io/design-site/"
+baseurl: "design-site"
 
 permalink: :title
 
