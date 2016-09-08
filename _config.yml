@@ -11,11 +11,13 @@ assets:
   cachebust: soft
 
 # Site settings
-title: Jekyll Starter
-description: Prototyping starter kit for Jekyll
+title: Jerome Toole | Design & Development
+description: Design and Development
 
 # Name of project on Github
-baseurl: /proteus-jekyll
+# baseurl: /
+
+permalink: :title
 
 # Build settings
 markdown: kramdown

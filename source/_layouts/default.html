@@ -12,7 +12,8 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="stylesheet" href="{% asset_path application.css %}">
   </head>
-  <body>
+  <body {% if page.slug %} class="{{ page.slug }}"{% endif %}>
+    {% if page.image %} <img class="post-img" src="{{ site.baseurl }}/images/{{ page.image }}"> {% endif %}
     {{ content }}
     <script type="text/javascript" src="{% asset_path application.js %}"></script>
   </body>

@@ -1,11 +1,36 @@
 ---
 layout: default
+slug: home
 ---
+%section.splash
+  %h1 Jerome Toole
+  %h2 Designer and Developer
+  %h3 Web, social media content and print
 
-.delete-me
-  .container
-    %h1 Proteus
-    %p
-      You're all set!
-      <a href="http://github.com/thoughtbot/proteus-jekyll">Let's get started</a>
-      building your prototype.
+.main
+
+  %section.intro
+    :markdown
+      I'm a freelance designer and developer based in London. I love working on projects with a social aim and with organisations in the arts & culture sector.
+
+  %section.experience
+    :markdown
+      ### Experience
+      - Node.js
+      - React
+      - Wordpress
+      - Small + Simple CMSs (Grav, Kirby)
+      - UX design
+      - Digital Content Strategy
+
+
+  %section.projects
+    %h3 Projects
+    %ul.post-list
+      {% for post in site.posts %}
+      %li
+        %a.post-link{:href => "{{ post.url | prepend: site.baseurl }}"} {{ post.title }}
+        %img.post-img{:src => "{{ site.baseurl }}/images/{{ post.image }}"}
+      {% endfor %}
+
+%div.background

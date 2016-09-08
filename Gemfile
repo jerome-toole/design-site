@@ -10,3 +10,6 @@ gem "octopress-autoprefixer"
 gem "sass"
 gem "uglifier"
 gem "mini_magick"
+gem 'guard'
+gem 'guard-jekyll-plus'
+gem 'guard-livereload'

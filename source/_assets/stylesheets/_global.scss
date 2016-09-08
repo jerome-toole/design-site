@@ -1,19 +1,67 @@
 body {
-  background-color: $light-gray;
-  color: $medium-gray;
+  background-color: $base-background-color;
+  color: black;
 }
 
-.delete-me {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 100vh;
+html, body {
+ min-height: 100%;
+}
 
-  .container {
-    text-align: center;
-
-    h1 {
-      font-weight: 200;
+body.home {
+  .main {
+    max-width: 40em;
+    background-color: white;
+    margin: 0 auto 3em;
+    border-radius: .5px;
+    padding: 1em 1.5em;
+  }
+  section {
+    padding: 0;
+    border-radius: .5px;
+    margin-bottom: 1.5em;
+    &.splash {
+      max-width: 40em;
+      margin: auto;
+      padding: 1.5em;
+      h1,h2,h3 {
+        margin-bottom: .5rem;
+      }
+      h1 {
+        font-weight: 200;
+        font-size: 2.5em;
+      }
     }
   }
+}
+
+
+div.background {
+  min-height: 100%;
+  background:      
+  radial-gradient(circle at 2.01% 1.95%, #83a4d4, transparent 100%),radial-gradient(circle at 97.99% 81.05%, #b6fbff, transparent 100%),radial-gradient(circle at 50% 50%, #ffffff, #ffffff 100%);
+  position:fixed;
+  top:0;
+  left:0;
+  height:100%;
+  width: 100%;
+  &:after {
+    content:'';
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width: 100%;
+    animation-name: gradOpacity;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+    background:radial-gradient(circle at 2.01% 18.05%, #ED4264, transparent 100%),radial-gradient(circle at 97.99% 95.04%, #FFEDBC, transparent 100%),radial-gradient(circle at 50% 50%, #ffffff, #ffffff 100%);
+    opacity:0;
+  }
+  z-index:-1;
+}
+@keyframes gradOpacity {
+  0%{opacity: 0;}
+    50%{opacity: .8;}
+  100%{opacity:0;}
 }
