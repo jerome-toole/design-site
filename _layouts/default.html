@@ -10,11 +10,11 @@
     <meta name="description" content="{{ site.description }}">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="stylesheet" href="{{ "assets/application.css" | prepend: site.url }}">
+    <link rel="stylesheet" href="{{ "css/application.css" | prepend: site.url }}">
   </head>
   <body {% if page.slug %} class="{{ page.slug }}"{% endif %}>
     {% if page.image %} <img class="post-img" src="{{ site.baseurl }}/images/{{ page.image }}"> {% endif %}
     {{ content }}
-    <script type="text/javascript" src="{{ "assets/application.js" | prepend: site.url }}"></script>
+    <script type="text/javascript" src="{{ "javascript/application.js" | prepend: site.url }}"></script>
   </body>
 </html>
