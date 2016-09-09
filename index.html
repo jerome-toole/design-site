@@ -31,7 +31,7 @@ slug: home
     <ul class="post-list">
       {% for post in site.posts %}
       <li>
-        <a class="post-link" href="{{ post.link }}">{{ post.title }}</a>
+        <a target="_blank" class="post-link" href="{{ post.link }}">{{ post.title }}</a>
         <div class="post-images">
           <img class="post-images__image" src="{{ site.baseurl }}/images/{{ post.image }}"/>
           {% if post.image2 %}<img class="post-images__image" src="{{ site.baseurl }}/images/{{ post.image2 }}"> {% endif %}
