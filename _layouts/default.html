@@ -15,6 +15,6 @@
   <body {% if page.slug %} class="{{ page.slug }}"{% endif %}>
     {% if page.image %} <img class="post-img" src="{{ site.baseurl }}/images/{{ page.image }}"> {% endif %}
     {{ content }}
-    <script type="text/javascript" src="{% asset_path application.js %}"></script>
+    <script type="text/javascript" src="{{ "assets/application.js" | prepend: site.url }}"></script>
   </body>
 </html>
