@@ -3,6 +3,7 @@ title:  "Brainchild Festival"
 date:   2016-07-07 17:26:19
 image: brainchild-1.png
 image2: brainchild-2.png
+link: http://brainchildfestival.co.uk
 caption: Wordpress based design and build for grass roots arts festival, Brainchild.
 layout: default
 ---

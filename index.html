@@ -4,31 +4,39 @@ slug: home
 ---
 <section class="splash">
   <h1>Jerome Toole</h1>
-  <h2>Designer and Developer</h2>
+  <h2>Designer and Web Developer</h2>
   <h3>Web, social media content and print</h3>
 </section>
 <div class="main">
   <section class="intro">
-    I'm a freelance designer and developer based in London. I love working on projects with a social aim and with organisations in the arts & culture sector.
+    <p>I'm a freelance designer and developer based in London. I love working on projects with a social aim and with organisations in the arts & culture sectors.</p>
   </section>
   <section class="experience">
-      <h3>Experience</h3>
+    <h3>Experience</h3>
+    <ul>
       <li>UX design</li>
       <li>Digital Content Strategy</li>
+    </ul>
 
-      <h3>Technologies</h3>
+    <h3>Technologies</h3>
+    <ul>    
       <li>React</li>
       <li>Node.js</li>
       <li>Wordpress</li>
       <li>Small + Simple CMSs (Grav, Kirby)</li>
+    </ul>
   </section>
   <section class="projects">
     <h3>Projects</h3>
     <ul class="post-list">
       {% for post in site.posts %}
       <li>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl  }}">{{ post.title }}</a>
-        <img class="post-img" src="{{ site.baseurl }}/images/{{ post.image }}"/>
+        <a class="post-link" href="{{ post.link }}">{{ post.title }}</a>
+        <div class="post-images">
+          <img class="post-images__image" src="{{ site.baseurl }}/images/{{ post.image }}"/>
+          {% if post.image2 %}<img class="post-images__image" src="{{ site.baseurl }}/images/{{ post.image2 }}"> {% endif %}
+        </div>
+
       </li>
       {% endfor %}
     </ul>

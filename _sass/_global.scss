@@ -15,6 +15,11 @@ body.home {
     border-radius: .5px;
     padding: 1em 1.5em;
   }
+  ul {
+    list-style-type: none;
+    padding-left: 1.2em;
+    margin-bottom: 1.5em;
+  }
   section {
     padding: 0;
     border-radius: .5px;
@@ -30,6 +35,12 @@ body.home {
         font-weight: 200;
         font-size: 2.5em;
       }
+    }
+  }
+  section.projects {
+    padding: 0 1.5em;
+    ul.post-list {
+      padding: 0;
     }
   }
 }

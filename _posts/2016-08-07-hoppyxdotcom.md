@@ -2,6 +2,8 @@
 title:  "HoppyX.com"
 date:   2016-07-07 17:26:19
 image: hoppyx-1.png
+image2: hoppyx-2.png
+link: http://hoppyx.com
 caption: A site to commemorate the life and work of celebrated photographer and leader of the 60s counterculture, John 'Hoppy' Hopkins
 layout: default
 ---
