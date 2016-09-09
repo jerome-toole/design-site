@@ -13,3 +13,4 @@ gem "mini_magick"
 gem 'guard'
 gem 'guard-jekyll-plus'
 gem 'guard-livereload'
+gem 'github-pages'

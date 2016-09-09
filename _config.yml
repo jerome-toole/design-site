@@ -4,7 +4,7 @@ gems:
   - octopress-autoprefixer
 
 # Structure configuration
-source: source
+source: 
 destination: build
 
 assets:
@@ -15,7 +15,7 @@ title: Jerome Toole | Design & Development
 description: Design and Development
 
 # Name of project on Github
-baseurl: "design-site"
+# baseurl: 
 
 permalink: :title
 
