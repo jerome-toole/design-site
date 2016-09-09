@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jerome Toole | Design &amp; Development</title>
+    <description>Design and Development</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 09 Sep 2016 11:41:05 +0100</pubDate>
+    <lastBuildDate>Fri, 09 Sep 2016 11:41:05 +0100</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>HoppyX.com</title>
+        <description>&lt;p&gt;Aenean feugiat, quam ac finibus elementum, mauris ante tempor dui, nec elementum lacus libero ut erat. Vestibulum lobortis quis ipsum eget rutrum. Integer pulvinar quis metus id blandit. Ut placerat ipsum est, nec consectetur sem sollicitudin ac.&lt;/p&gt;
+
+&lt;p&gt;Phasellus accumsan, tortor eget sodales lacinia, ante lacus malesuada ipsum, eu auctor risus diam id quam. Etiam egestas, libero nec euismod pharetra, est odio luctus dui, vitae varius tortor ante eget lectus. Nullam et tempus orci. Etiam hendrerit, neque ac porta lacinia, enim sapien maximus mauris, tristique blandit dolor purus non libero. Phasellus ultrices rutrum erat, quis vehicula mi pellentesque non. Aliquam tempor auctor vestibulum.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 07 Jul 2016 18:26:19 +0100</pubDate>
+        <link>/hoppyxdotcom</link>
+        <guid isPermaLink="true">/hoppyxdotcom</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Brainchild Festival</title>
+        <description>&lt;p&gt;I designed and built a Wordpress site for Brainchild festival. Creating an immediately engaging landing screen with video and optional sound.&lt;/p&gt;
+
+&lt;p&gt;One of the most important parts of the site was the line up which was designed in order that the user could flick through them without having to reload. They could also play YouTube or Soundcloud links from the artist without leaving the page.&lt;/p&gt;
+
+&lt;p&gt;Using simple colours and typography, the site has a fresh and lively feel.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 07 Jul 2016 18:26:19 +0100</pubDate>
+        <link>/brainchild-festival</link>
+        <guid isPermaLink="true">/brainchild-festival</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

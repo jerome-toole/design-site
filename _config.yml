@@ -4,8 +4,8 @@ gems:
   - octopress-autoprefixer
 
 # Structure configuration
-source: 
-destination: build
+# source: 
+# destination: build
 
 assets:
   cachebust: soft
