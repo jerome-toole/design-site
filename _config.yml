@@ -5,7 +5,7 @@ gems:
 
 # Structure configuration
 # source: 
-# destination: build
+destination: _site
 
 assets:
   cachebust: soft
