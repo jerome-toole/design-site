@@ -1,0 +1,39 @@
+---
+layout: default
+slug: home
+---
+<section class="splash">
+  <h1>Jerome Toole</h1>
+  <h2>Designer and Developer</h2>
+  <h3>Web, social media content and print</h3>
+</section>
+<div class="main">
+  <section class="intro">
+    I'm a freelance designer and developer based in London. I love working on projects with a social aim and with organisations in the arts & culture sector.
+  </section>
+  <section class="experience">
+      
+      ### Experience
+      - UX design
+      - Digital Content Strategy
+
+      ### Technologies
+      - React
+      - Node.js
+      - Wordpress
+      - Small + Simple CMSs (Grav, Kirby)
+
+  </section>
+  <section class="projects">
+    <h3>Projects</h3>
+    <ul class="post-list">
+      {% for post in site.posts %}
+      <li>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl  }}">{{ post.title }}</a>
+        <img class="post-img" src="{{ site.baseurl }}/images/{{ post.image }}"/>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>
+<div class="background"></div>
