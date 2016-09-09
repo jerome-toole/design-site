@@ -10,7 +10,7 @@
     <meta name="description" content="{{ site.description }}">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="stylesheet" href="{% asset_path application.css %}">
+    <link rel="stylesheet" href="{{ "assets/application.css" | prepend: site.url }}">
   </head>
   <body {% if page.slug %} class="{{ page.slug }}"{% endif %}>
     {% if page.image %} <img class="post-img" src="{{ site.baseurl }}/images/{{ page.image }}"> {% endif %}
