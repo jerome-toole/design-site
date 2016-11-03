@@ -93,6 +93,9 @@ body.home {
       > li {
         position: relative;
         margin-bottom: 4em;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
       }
       a {
         font-size: .6em;
