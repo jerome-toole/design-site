@@ -85,17 +85,26 @@ body.home {
     }
   }
   section.projects {
+    h3 {
+      font-size: 0.7em;
+      margin-bottom: -1.5em;
+    }
     ul.post-list {
-      li {
+      > li {
         position: relative;
+        margin-bottom: 4em;
       }
       a {
-        position: absolute;
         font-size: .6em;
         color: $dark-gray;
         bottom: 0;
         right: 0;
         float: right;
+        margin-top: .5em;
+      }
+      .slick-dots {
+        position: absolute;
+        margin-top: -0.3em;
       }
     }
   }
