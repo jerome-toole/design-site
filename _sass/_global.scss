@@ -13,7 +13,7 @@ body.home {
   .main {
     max-width: 40em;
     margin: auto;
-    padding: 1.5em 2.5em;
+    padding: 1.5em 5%;
   }
   .header,
   footer {
@@ -87,15 +87,30 @@ body.home {
   section.projects {
     h3 {
       font-size: 0.7em;
-      margin-bottom: -1.5em;
     }
-    ul.post-list {
+    ul.projects__list {
+      margin-top: 1em;
       > li {
         position: relative;
         margin-bottom: 4em;
         &:last-of-type {
           margin-bottom: 0;
         }
+      }
+      .project__text {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 28em;
+        h4,p {
+          font-size: .8em;
+        }
+      }
+      .project__title {
+        border-bottom: solid 1px black;
+        display: inline-block;
+      }
+      .project__caption {
+        margin-bottom: $base-spacing;
       }
       a {
         font-size: .6em;
@@ -174,7 +189,7 @@ $color_apple_approx: #3eba3a;
 
 .browser {
   padding: 35px 1px 1px;
-  margin: 40px auto 0;
+  margin: auto 0;
   width: 100%;
   height: auto;
   overflow: hidden;
@@ -219,6 +234,7 @@ $color_apple_approx: #3eba3a;
     left: 15px;
     margin: 0;
     padding: 0;
+    opacity: .1;
     li {
       display: inline-block;
       width: 8px;

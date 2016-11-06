@@ -40,9 +40,13 @@ slug: home
   </section>
   <section class="projects">
     <h3>Work</h3>
-    <ul class="post-list">
+    <ul class="projects__list">
       {% for post in site.posts %}
-      <li>
+      <li class="project">
+        <div class="project__text">
+          <h4 class="project__title">{{ post.title }}</h4>
+          {% if post.caption %} <p class="project__caption">{{ post.caption }}</p>{% endif %}
+        </div>
         <div class="browser">
           <h4 class="title">{{ post.title }}</h4>
           <ul class="ui">
