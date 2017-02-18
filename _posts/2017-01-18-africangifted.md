@@ -1,16 +1,10 @@
 ---
-title:  "Brainchild Festival"
+title:  "African Science Academy"
 date:   2016-07-07 17:26:19
 images: 
-  - brainchild-1.png
-  - brainchild-2.png
-link: http://brainchildfestival.co.uk
-caption: Single pager with audio player and Woocommerce shop for voluntary arts festival, Brainchild. Currently under development for 2017.
-tech:
-  - Wordpress
-  - Woocommerce
-  - Trellis, Bedrock, Sage
-  - Soundcloud API
+  - african-1.png
+link: http://africangifted.org
+caption:  The African Science Academy, a new maths and science school for gifted girls in Africa needed their website brought up to speed with their new brand. I improved their standard Wordpress theme to fit with brand guidelines and improve usability.
 layout: default
 ---
 I designed and built a Wordpress site for Brainchild festival. Creating an immediately engaging landing screen with video and optional sound. 

@@ -15,28 +15,19 @@ slug: home
 </div>
 <div class="main">
   <section class="intro">
-    <p>I'm a freelance designer and developer based in London. I love working on projects with a social aim and with organisations in the arts & culture sectors.</p>
+    <p>{{site.data.intro}}</p>
   </section>
   <section class="experience">
+  {% for attribute in site.data.attributes %}
     <div class="experience__columns">
-      <h3>Experience</h3>
+      <h3>{{attribute.attribute}}</h3>
       <ul>
-        <li>Web Design &amp; Development</li>
-        <li>UX design</li>
-        <li>Digital Content Strategy</li>
-        <li>Graphic Design</li>
+        {% for item in attribute.items %}
+        <li>{{item}}</li>
+        {% endfor %}
       </ul>
     </div>
- 
-    <div class="experience__columns">
-      <h3>Technologies</h3>
-      <ul>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>Wordpress</li>
-        <li>Small + Simple CMSs (Grav, Kirby)</li>
-      </ul>
-    </div>
+  {%endfor%}
   </section>
   <section class="projects">
     <h3>Work</h3>
@@ -44,7 +35,7 @@ slug: home
       {% for post in site.posts %}
       <li class="project">
         <div class="project__text">
-          <h4 class="project__title">{{ post.title }}</h4>
+          <h4 class="project__title">{% if post.link %}<a target="_blank" class="" href="{{ post.link }}">{{ post.title }}</a>{%else%}{{ post.title }}{%endif%}</h4>
           {% if post.caption %} <p class="project__caption">{{ post.caption }}</p>{% endif %}
         </div>
         <div class="browser">
@@ -56,8 +47,9 @@ slug: home
           </ul>
           <div class="window">
             <div class="post-images post-{{ forloop.index }}">
-              <img class="post-images__image" src="{{ site.baseurl }}/images/{{ post.image }}"/>
-              {% if post.image2 %}<img class="post-images__image" src="{{ site.baseurl }}/images/{{ post.image2 }}"> {% endif %}
+              {%for image in post.images %}
+              <img class="post-images__image" src="{{ site.baseurl }}/images/{{ image }}"/>
+              {% endfor %}
             </div>
           </div>
         </div>
@@ -65,6 +57,7 @@ slug: home
         </li>
       {% endfor %}
     </ul>
+    <p>Other clients include <a href="http://idler.co.uk">The Idler Magazine</a> and renewable biofuels startup, <a href="http://bio-bean.com">Bio-Bean</a></p>
   </section>
 </div>
 

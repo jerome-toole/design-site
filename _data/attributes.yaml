@@ -1,0 +1,19 @@
+- attribute: Experience
+  items:
+    - Web Design & Development
+    - UX design
+    - Digital Content Strategy
+    - Graphic Design
+    - Product Development
+
+- attribute: Technology
+  items:
+    - Wordpress (Bedrock + Trellis)
+    - React
+    - Static Site Generators
+    - Small CMS (Grav, Kirby)
+    - Node.js
+    - SASS
+    - Javascript
+
+

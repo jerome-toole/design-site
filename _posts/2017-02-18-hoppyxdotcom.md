@@ -1,10 +1,13 @@
 ---
 title:  "HoppyX.com"
 date:   2016-07-07 17:26:19
-image: hoppyx-1.png
-image2: hoppyx-2.png
-link: 
-caption: A site to commemorate the life and work of celebrated photographer and leader of the 60s counterculture, John 'Hoppy' Hopkins
+images: 
+  - hoppyx-3.png
+  - hoppyx-4.png
+  - hoppyx-2.png
+  - hoppyx-1.png
+link: https://hoppyx.com
+caption: A site to commemorate the life and work of celebrated photographer and leader of the 60s counterculture, John 'Hoppy' Hopkins. The site has stripped back styling, allowing the photography to take center stage and referencing the aesthetic of the early IT magazines, which Hoppy co-founded. You may also find colorful hints of the acid-induced psychedelia of his heydey.
 layout: default
 ---
 Aenean feugiat, quam ac finibus elementum, mauris ante tempor dui, nec elementum lacus libero ut erat. Vestibulum lobortis quis ipsum eget rutrum. Integer pulvinar quis metus id blandit. Ut placerat ipsum est, nec consectetur sem sollicitudin ac. 

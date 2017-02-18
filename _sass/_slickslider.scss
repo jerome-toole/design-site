@@ -5,6 +5,11 @@
     // background: #fff url('./ajax-loader.gif') center center no-repeat;
 }
 
+.slick-dotted .slick-list {
+  cursor: url(../images/icons/next.png),auto;
+  cursor: -webkit-image-set(url(../images/icons/next.png) 1x),auto;
+}
+
 .slick-slide:focus {
     outline: none;
 }
