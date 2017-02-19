@@ -3,6 +3,7 @@
     - Web Design & Development
     - UX design
     - Digital Content Strategy
+    - Interface Design
     - Graphic Design
     - Product Development
 
@@ -10,10 +11,10 @@
   items:
     - Wordpress (Bedrock + Trellis)
     - React
-    - Static Site Generators
+    - Build Tools (Gulp, Webpack, static site generators)
     - Small CMS (Grav, Kirby)
     - Node.js
     - SASS
-    - Javascript
+    - Photoshop/Sketch Mockups
 
 
