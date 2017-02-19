@@ -5,7 +5,7 @@ images:
   - brainchild-1.png
   - brainchild-2.png
 link: http://brainchildfestival.co.uk
-caption: Single pager with audio player and Woocommerce shop for voluntary arts festival, Brainchild. Currently under development for 2017.
+caption: Single pager with audio player and Woocommerce shop for voluntary arts festival, Brainchild. Currently under further development for 2017.
 tech:
   - Wordpress
   - Woocommerce

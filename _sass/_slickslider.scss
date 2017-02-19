@@ -80,12 +80,9 @@
 }
 
 /* Dots */
-.slick-dots
-{
-    // position: absolute;
-    // bottom: -50px;
+.slick-dots {
 
-    display: block;
+    display: inline-block;
 
     width: 100%;
     padding: 0;
@@ -94,8 +91,8 @@
 
     text-align: center;
 }
-.slick-dots li
-{
+
+.slick-dots li {
     position: relative;
 
     display: inline-block;
@@ -107,8 +104,8 @@
 
     cursor: pointer;
 }
-.slick-dots li button
-{
+
+.slick-dots li button {
     font-size: 0;
     line-height: 0;
 

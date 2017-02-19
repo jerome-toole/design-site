@@ -33,10 +33,16 @@ body.home {
     }
     li {
       display: inline-block;
-      margin-right: 1em;
+      margin: .5em;
       &:last-of-type {
         margin-right: 0;
       }
+    }
+    p {
+      margin: 0 auto 0.5em;
+      font-size: 0.8em;
+      text-align: center;
+      font-weight: 500;
     }
     a {
       border: 1px solid $action-color;
@@ -95,18 +101,20 @@ body.home {
       font-size: .8em;
     }
     ul.projects__list {
-      margin: 1em;
+      margin: 0 auto 1em;
       > li {
         position: relative;
         margin-bottom: 4em;
         &:last-of-type {
-          margin-bottom: 2em;
+          margin-bottom: 3em;
         }
       }
       .project__text {
         margin-left: auto;
         margin-right: auto;
-        max-width: 28em;
+        max-width: 30em;
+        margin-left: 1em;
+        margin-right: 1em;
         h4,p {
           font-size: .8em;
         }
@@ -129,7 +137,7 @@ body.home {
         max-width: none;
       }
       a.post-link {
-        font-size: .6em;
+        font-size: .7em;
         color: $dark-gray;
         bottom: 0;
         right: 0;
@@ -137,10 +145,11 @@ body.home {
         margin-top: .5em;
         position: relative;
         z-index: 3;
+        @include media($phablet) {
+          font-size: .6em;
+        }
       }
       .slick-dots {
-        position: absolute;
-        margin-top: -0.3em;
       }
     }
   }
@@ -150,6 +159,7 @@ body.home {
     }
     @include row;
     .experience__columns {
+      margin-bottom: 1em;
       @include media($phone) {
         @include span-columns(6);
       }
@@ -176,10 +186,13 @@ div.background {
     height:100%;
     width: 100%;
     animation-name: gradOpacity;
-    animation-duration: 24s;
+    animation-duration: 14s;
     animation-iteration-count: infinite;
     background:radial-gradient(circle at 2.01% 18.05%, #ED4264, transparent 100%),radial-gradient(circle at 97.99% 95.04%, #FFEDBC, transparent 100%),radial-gradient(circle at 50% 50%, #ffffff, #ffffff 100%);
     opacity:0;
+    @include media($phablet) {
+      animation-duration: 22s;
+    }
   }
   z-index:-1;
 }
@@ -204,7 +217,7 @@ $color_screamin_green_approx: #4ee949;
 $color_apple_approx: #3eba3a;
 
 .browser {
-  padding: 35px 1px 1px;
+  padding: 1px 1px 1px;
   margin: auto 0;
   width: 100%;
   height: auto;
@@ -216,6 +229,9 @@ $color_apple_approx: #3eba3a;
   cursor: normal;
   //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
   transition: width 800ms, height 800ms, padding 100ms;
+  @include media($phablet) {
+    padding-top: 35px;
+  }
   &.minied {
     height: 0;
     padding-bottom: 0;
@@ -234,6 +250,7 @@ $color_apple_approx: #3eba3a;
     }
   }
   .title {
+    cursor: default;
     position: absolute;
     width: 100%;
     text-align: center;
@@ -247,6 +264,7 @@ $color_apple_approx: #3eba3a;
     margin: 0;
   }
   .ui {
+    cursor: default;
     position: absolute;
     top: 1px;
     left: 15px;
@@ -280,6 +298,40 @@ $color_apple_approx: #3eba3a;
     overflow-y: auto;
     //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
     transition: height 800ms;
-    border: 1px solid #f7f7f7;
+    border-top: 1px solid #f7f7f7;
   }
+}
+
+body.home .main {
+  // animation-name: floating;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 10s;
+
+@keyframes floating {
+  0% {
+    transform: translate3d(0,0,0);  
+  }
+  15% {
+    transform: translate3d(3px,1px,0); 
+  } 
+  25% {
+    transform: translate3d(1px,2px,0); 
+  } 
+  50% {
+    transform: translate3d(0px,-2px,0); 
+  } 
+  65% {
+    transform: translate3d(3px,0px,0); 
+  } 
+  90% {
+    transform: translate3d(1px,2px,0); 
+  } 
+  80% {
+    transform: translate3d(3px,1px,0); 
+  } 
+  100% {
+    transform: translate3d(0,0,0);
+  }     
+}
 }

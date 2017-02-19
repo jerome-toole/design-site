@@ -13,10 +13,9 @@ $('.post-images').each(function (idx, item) {
     dots: true,
     infinite: true,
     cssEase: 'linear',
-    appendDots: $("#" + carouselId).closest('li')
+    appendDots: $("#" + carouselId).closest('.browser').next('.dots-container')
   });
-  $('.slick-slide').click(function() {
-    $("#" + carouselId).slick('slickNext');
-    console.log('this');
+  $(this).click(function() {
+    $('#'+this.id).slick('slickNext');
   });
 });
