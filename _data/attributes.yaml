@@ -1,20 +1,19 @@
 - attribute: Experience
   items:
-    - Web Design & Development
-    - UX design
-    - Digital Content Strategy
+    - Front End Web Development
     - Interface Design
-    - Graphic Design
+    - User Experience Design
+    - Digital Marketing Strategy
     - Product Development
 
 - attribute: Technology
   items:
     - Wordpress (Bedrock + Trellis)
     - React
-    - Build Tools (Gulp, Webpack, static site generators)
+    - Build Tools (Gulp, Webpack, Static Site Generators)
     - Small CMS (Grav, Kirby)
     - Node.js
-    - SASS
+    - Sass, LESS, BEM
     - Photoshop/Sketch Mockups
 
 
