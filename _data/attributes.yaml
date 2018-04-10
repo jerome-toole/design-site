@@ -9,11 +9,10 @@
 - attribute: Technology
   items:
     - Wordpress (Bedrock + Trellis)
-    - React
-    - Build Tools (Gulp, Webpack, Static Site Generators)
-    - Small CMS (Grav, Kirby)
-    - Node.js
+    - Build Tools (Gulp, Webpack)
+    - Node.js, React
     - Sass, LESS, BEM
-    - Photoshop/Sketch Mockups
+    - Sketch
+    - Adobe Ps, Ai, Id, Pr, Ae
 
 

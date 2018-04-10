@@ -1,7 +1,7 @@
 ---
 layout: default
 slug: home
-intro: I'm a freelance designer and developer based in London. I love working on projects with a social aim and with organisations in the arts & culture sectors.
+intro: I'm a designer and developer based in London. I love working on projects with a social aim and with organisations in the arts & culture sectors.
 ---
 <div class="header">
   <section class="splash">
@@ -16,7 +16,7 @@ intro: I'm a freelance designer and developer based in London. I love working on
 </div>
 <div class="main">
   <section class="intro">
-    <p>I'm a freelance designer and developer based in London. I love working on projects with a social aim and with organisations in the arts &amp; culture sectors.</p>
+    <p>I'm a designer and developer based in London. I love working in the arts &amp; cultural sectors on projects with a social aim and with organisations in the .</p>
   </section>
   <section class="experience">
   {% for attribute in site.data.attributes %}
@@ -48,9 +48,19 @@ intro: I'm a freelance designer and developer based in London. I love working on
           </ul>
           <div class="window">
             <div class="post-images post-{{ forloop.index }}">
+            {%if forloop.first %}
+
               {%for image in post.images %}
               <img class="post-images__image" src="{{ site.baseurl }}/images/{{ image }}"/>
               {% endfor %}
+
+            {%else%}
+
+              {%for image in post.images %}
+              <img class="post-images__image" data-src="{{ site.baseurl }}/images/{{ image }}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"/>
+              {% endfor %}
+
+            {%endif%}
             </div>
           </div>
         </div>
@@ -61,7 +71,7 @@ intro: I'm a freelance designer and developer based in London. I love working on
         </li>
       {% endfor %}
     </ul>
-    <p>Other clients include <a href="http://idler.co.uk">The Idler Magazine</a> and renewable biofuels startup, <a href="http://bio-bean.com">Bio-Bean.</a></p>
+    <p>Other clients include festival and venue group, <a href="broadwicklive.com">Broadwick Live</a>, <a href="http://idler.co.uk">The Idler Magazine</a> and renewable biofuels startup, <a href="http://bio-bean.com">Bio-Bean.</a></p>
   </section>
 </div>
 
@@ -73,3 +83,7 @@ intro: I'm a freelance designer and developer based in London. I love working on
   </ul>
 </footer>
 <div class="background"></div>
+
+<script>
+
+</script>
