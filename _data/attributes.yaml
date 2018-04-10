@@ -1,10 +1,9 @@
-- attribute: Experience
+- attribute: Skills
   items:
     - Front End Web Development
     - Interface Design
-    - User Experience Design
-    - Digital Marketing Strategy
-    - Product Development
+    - UX Design
+    - Digital Strategy
 
 - attribute: Technology
   items:
